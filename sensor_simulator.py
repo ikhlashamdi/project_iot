@@ -31,11 +31,11 @@ def on_message(client, userdata, msg):
         
         if methode == "led":
             if params == "on":
-                print("💡 LED = ON (simulé)")
+                print("LED = ON (simulé)")
             elif params == "off":
-                print("🌑 LED = OFF (simulé)")
+                print("LED = OFF (simulé)")
         elif methode == "mode":
-            print(f"🔄 Mode changé à : {params} (simulé)")
+            print(f"Mode changé à : {params} (simulé)")
 
         
         response_topic = msg.topic.replace("request", "response")
